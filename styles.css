@@ -10,8 +10,8 @@
 html {
   font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
-  background-color: #505050;
-  color: #FBFAFA;
+  background-image: linear-gradient(to right, #84efe2, #372e96);
+  color: white;
 }
 
 *,
@@ -27,50 +27,31 @@ html {
   justify-content: center;
   width: 100%;
   height: 4rem;
-  background-color: #1E1E1E;
+  background-color: #220e24;
+  position: fixed;
+  top: 0;
 }
 
-.menu {
+.nav-bar ul {
   display: flex;
   width: 40%;
   justify-content: space-evenly;
 }
 
-.list {
+.nav-bar ul li {
   list-style: none;
   padding: 0 1em;
 }
 
-.link {
+.nav-bar ul li a{
   color: #C7C6C6;
   text-decoration: none;
   transition: 0.4s ease;
   font-size: 1rem;
 }
 
-.link:hover {
+.nav-bar ul li a:hover {
   color: #FBFAFA;
-}
-
-.social-container {
-  display: none;
-}
-
-.social-menu {
-  display: flex;
-  
-}
-
-.social-list {
-  list-style: none;
-  padding: 0 1em;
-}
-
-.social-link {
-  color: #C7C6C6;
-  text-decoration: none;
-  transition: 0.4s ease;
-  font-size: 0.8rem;
 }
 
 /* Header */
@@ -82,13 +63,15 @@ html {
   font-size: 5rem;
   letter-spacing: 3px;
   font-weight: 100;
-  padding-top: 0.8em;
+  text-shadow: 2px 2px 5px #000;
+  padding-top: 1em;
 }
 
 .sub-header {
   font-size: 1.5rem;
   letter-spacing: 1px;
   font-weight: 400;
+  text-shadow: 2px 2px 5px #000;
   padding: 1em;
 }
 
@@ -98,12 +81,41 @@ html {
   margin: 8em auto 0 auto;
 }
 
-.about-text {
+.about p {
   text-align: center;
   font-size: 1rem;
   letter-spacing: 1px;
-  font-weight: 400;
+  font-weight: 500;
+  text-shadow: 2px 2px 5px #000;
   line-height: 1.5em;
+}
+
+.section-title-projects {
+  text-align: center;
+  width: 100%;
+  margin-top: 3em;
+}
+
+.section-title-projects h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 5px #000;
+}
+
+.projects {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-evenly;
+  margin-top: 5em;
+}
+
+.projects-box {
+  width: 25%;
+  height: 400px;
+  background-color: #220e24;
+  border-radius: 1rem;
 }
 
 
@@ -114,5 +126,9 @@ html {
 
   .main-header {
     font-size: 3rem;
+  }
+
+  .about {
+    width: 60%;
   }
 }

@@ -10,7 +10,6 @@
 html {
   font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
-  background-image: linear-gradient(to right, #84efe2, #372e96);
   color: white;
 }
 
@@ -27,7 +26,7 @@ html {
   justify-content: center;
   width: 100%;
   height: 4rem;
-  background-color: #220e24;
+  background-color: #111111;
   position: fixed;
   top: 0;
 }
@@ -44,7 +43,7 @@ html {
 }
 
 .nav-bar ul li a{
-  color: #C7C6C6;
+  color: #b6b6b6;
   text-decoration: none;
   transition: 0.4s ease;
   font-size: 1rem;
@@ -54,7 +53,24 @@ html {
   color: #FBFAFA;
 }
 
-/* Header */
+.background-image {
+  background-image: url(https://www.wallpapertip.com/wmimgs/83-838362_web-developer.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* ---------- Containers ----------*/
+.container-1 {
+  height: 100vh;
+}
+
+.container-2 {
+  width: 100%;
+  height: 100vh;
+  background-color: #000000;
+}
+
+/* ---------- Header ---------- */
 .header-container {
   text-align: center;
 }
@@ -81,26 +97,29 @@ html {
   margin: 8em auto 0 auto;
 }
 
+/* ---------- About Paragraph ---------- */
 .about p {
   text-align: center;
   font-size: 1rem;
   letter-spacing: 1px;
-  font-weight: 500;
+  font-weight: 600;
   text-shadow: 2px 2px 5px #000;
   line-height: 1.5em;
 }
 
+/* ---------- Projects Section ---------- */
 .section-title-projects {
   text-align: center;
   width: 100%;
-  margin-top: 3em;
+  padding-top: 3em;
 }
 
 .section-title-projects h3 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 400;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   text-shadow: 2px 2px 5px #000;
+  color: #b6b6b6;
 }
 
 .projects {
@@ -109,13 +128,28 @@ html {
   height: auto;
   justify-content: space-evenly;
   margin-top: 5em;
+  padding-bottom: 2em;
 }
 
 .projects-box {
   width: 25%;
   height: 400px;
-  background-color: #220e24;
-  border-radius: 1rem;
+  background-color: #111111;
+  border-radius: 2.5rem;
+  transition: all 0.5s ease;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0);
+}
+
+.projects-box:hover {
+  transform: scale(1.1);
+  border-radius: 2.5rem;
+  background-color: #444444;
+}
+
+.footer-container {
+  width: 100%;
+  height: 50px;
+  background-color: #111111;
 }
 
 
@@ -130,5 +164,21 @@ html {
 
   .about {
     width: 60%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-2 {
+    height: auto;
+  }
+
+  .projects-box {
+    width: 70%;
+    margin-top: 2em;
   }
 }

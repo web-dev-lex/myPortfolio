@@ -67,7 +67,7 @@ html {
 
 .container-2 {
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-color: #000000;
 }
 
@@ -151,9 +151,7 @@ html {
   padding-bottom: 2em;
 }
 
-
-
-.cryptospot-container {
+.container {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -162,25 +160,7 @@ html {
   padding-top: 5em;
 }
 
-.cryptospot-container h3 {
-  
-}
-
-.cryptospot-container img {
-  width: 500px;
-  border-radius: 20px;
-  transition: 0.8s ease;
-}
-
-.cryptospot-container img:hover {
-  transform: scale(1.2);
-  box-shadow: 0 0 30px #b6b6b6;
-}
-
-
-
-
-.projects h3 {
+.container h3 {
   font-size: 4rem;
   font-weight: 100;
   letter-spacing: 2px;
@@ -188,14 +168,26 @@ html {
   margin: auto 0;
 }
 
+.container img {
+  width: 500px;
+  border-radius: 20px;
+  transition: 0.8s ease;
+}
 
+.container img:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 30px #b6b6b6;
+}
 
-
+.demo-man-container {
+  margin-top: 10em;
+}
 
 .footer-container {
   width: 100%;
-  height: 50px;
+  height: 10em;
   background-color: #000000;
+  
 }
 
 

@@ -26,7 +26,7 @@ html {
   justify-content: center;
   width: 100%;
   height: 4rem;
-  background-color: #000000;
+  background-color: #0E0E0E;
   position: fixed;
   top: 0;
 }
@@ -54,10 +54,9 @@ html {
 }
 
 .background-image {
-  background-image: url(https://mistertech.co.za/wp-content/uploads/2021/04/IMG_6307-2048x1365.jpg);
-  /*background-image: url(https://www.wallpapertip.com/wmimgs/83-838362_web-developer.jpg);*/
-  background-size: cover;
-  background-attachment: fixed;
+  background-image: radial-gradient(#9494C8, #09093A);
+  /*background-size: cover;
+  background-attachment: fixed;*/
 }
 
 /* ----- Containers -----*/
@@ -68,7 +67,14 @@ html {
 .container-2 {
   width: 100%;
   height: auto;
-  background-color: #000000;
+  background-color: #0E0E0E;
+}
+
+.container-main {
+  display: flex;
+  margin: 2em 5em;
+  align-items: center;
+  height: 100vh;
 }
 
 /* ----- Social Links -----*/
@@ -92,15 +98,15 @@ html {
 
 /* ----- Header ----- */
 .header-container {
-  text-align: center;
+  
 }
 
 .main-header {
-  font-size: 5rem;
+  font-size: 3rem;
   letter-spacing: 3px;
   font-weight: 100;
   text-shadow: 2px 2px 5px #000;
-  padding-top: 1em;
+  
 }
 
 .sub-header {
@@ -108,20 +114,20 @@ html {
   letter-spacing: 1px;
   font-weight: 400;
   text-shadow: 2px 2px 5px #000;
-  padding-top: 1.5em;
+  
 }
 
-.about {
-  width: 50%;
-  height: auto;
-  margin: 8em auto 0 auto
-}
+
+
+
+
+
 
 /* ----- About Paragraph ----- */
 .about p {
   text-align: center;
-  font-size: 1rem;
-  letter-spacing: 1px;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
   font-weight: 400;
   text-shadow: 2px 2px 5px #000;
   line-height: 1.5em;
@@ -203,6 +209,36 @@ html {
   .about {
     width: 60%;
   }
+
+  .section-title-projects h3 {
+    font-size: 3rem;
+  }
+
+  .container h3 {
+    font-size: 2rem;
+  }
+
+  .container img {
+    width: 200px;
+  }
+
+  .github-link {
+    position: fixed;
+    top: 92%;
+    left: 18%;
+  }
+  
+  .linkedIn-link {
+    position: fixed;
+    top: 92%;
+    left: 48%;
+  }
+  
+  .twitter-link {
+    position: fixed;
+    top: 92%;
+    left: 78%;
+  }
 }
 
 @media only screen and (max-width: 850px) {
@@ -218,5 +254,17 @@ html {
   .projects-box {
     width: 70%;
     margin-top: 2em;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container img {
+    max-width: 400px;
+    margin-top: 3em;
   }
 }
